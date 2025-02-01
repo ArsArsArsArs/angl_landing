@@ -1,0 +1,37 @@
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-family: "Exo 2", serif;
+}
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+middle {
+    display: grid;
+    place-items: center;
+}
+header {
+    background-color: var(--pico-primary-background);
+    padding: 1rem;
+}
+header h1, header p {
+    color: var(--pico-secondary-inverse);
+}
+
+.gb_flag {
+    display: inline-block;
+    transition: transform 0.5s ease;
+    @media screen and (max-width: 350px) {
+        display: none;
+    }
+}
+.gb_flag:hover, .gb_flag:active {
+    transform: rotate(360deg);
+}
